@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const About_layer_card = () => {
     const layer_card = [
@@ -12,22 +12,37 @@ const About_layer_card = () => {
             name: '100% ISO Certification',
             txt: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         }
-    ]
+    ];
+
     return (
         layer_card.map((elem, idx) => {
             return (
-                <div className='w-full flex mt-8 items-center flex-wrap' key={idx}>
-                    <div className='w-1/6'>
-                        <img src={elem.icon} alt="#" />
+                <div
+                    className="w-full flex flex-wrap items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14"
+                    key={idx}
+                >
+                    {/* Icon Section */}
+                    <div className="w-1/6 sm:w-2/12 md:w-1/5 lg:w-1/6 flex justify-center">
+                        <img
+                            src={elem.icon}
+                            alt={elem.name}
+                            className="w-12 sm:w-16 md:w-20 lg:w-24"
+                        />
                     </div>
-                    <div className='w-5/6'>
-                        <h3 className='text-2xl uppercase font-semibold font-[oswald]'>{elem.name}</h3>
-                        <p className='text-lg w-5/6'>{elem.txt}</p>
+
+                    {/* Text Section */}
+                    <div className="w-5/6 sm:w-10/12 md:w-4/5 lg:w-5/6">
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase font-semibold font-[oswald]">
+                            {elem.name}
+                        </h3>
+                        <p className="text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-11/12 md:w-10/12">
+                            {elem.txt}
+                        </p>
                     </div>
                 </div>
-            )
+            );
         })
-    )
-}
+    );
+};
 
-export default About_layer_card
+export default About_layer_card;
