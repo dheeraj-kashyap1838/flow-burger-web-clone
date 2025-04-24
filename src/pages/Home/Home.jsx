@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className='hero w-full min-h-screen relative text-white overflow-x-hidden'>
+      <section className='hero w-full min-h-screen text-white relative overflow-x-hidden'>
         <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8'>
           <h1 className='text-4xl sm:text-6xl lg:text-9xl uppercase font-semibold mb-6'>Burger</h1>
           <p className='text-sm sm:text-lg md:text-xl leading-6 md:leading-8 hidden md:block'>
@@ -18,7 +18,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className='w-full py-12 sm:py-24 px-6 sm:px-12 text-black md:flex items-center flex-wrap'>
+      <section className='w-full py-12 sm:py-24 px-6 sm:px-12 md:flex items-center flex-wrap'>
         <div className='md:w-1/2 mb-8 md:mb-0 flex justify-center'>
           <FloatBurger burgerlink='tb-about-images.png' />
         </div>
@@ -54,7 +54,7 @@ const Home = () => {
       </section>
 
       {/* Specials Section */}
-      <section className='special w-full text-white flex flex-wrap py-12 sm:py-24 px-6 sm:px-12'>
+      <section className='special w-full flex flex-wrap py-12 sm:py-24 px-6 sm:px-12'>
         <div className='md:w-1/2 w-full flex flex-wrap'>
           {['special-img-01.jpg', 'special-img-02.jpg'].map((img, idx) => (
             <div className='w-1/2 px-2' key={idx}>
@@ -68,7 +68,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className='md:w-1/2 w-full text-center md:text-left px-6'>
+        <div className='md:w-1/2 w-full text-center text-white md:text-left px-6'>
           <h2 className='text-3xl sm:text-5xl font-semibold'>Weekend's</h2>
           <h2 className='text-5xl sm:text-7xl lg:text-9xl mt-4 font-[oswald] font-semibold uppercase'>Special</h2>
           <h2 className='text-2xl sm:text-4xl mt-4 font-semibold'>Dinner for you...</h2>
@@ -101,7 +101,7 @@ const Home = () => {
 
       {/* Testimonial Section */}
       <section
-        className='w-full text-white py-12 sm:py-24 px-6 sm:px-12 bg-cover bg-center'
+        className='w-full py-12 sm:py-24 px-6 sm:px-12 bg-cover bg-center'
         style={{ backgroundImage: "url('/testimonial-bg.jpg')" }}
       >
         <div className='w-full md:w-1/2 mx-auto text-center'>
