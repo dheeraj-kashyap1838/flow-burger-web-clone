@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
 import Gallery from './pages/Gallery/Gallery';
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/Todo' element={<Todo/>} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   )
