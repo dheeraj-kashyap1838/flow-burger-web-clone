@@ -58,7 +58,7 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="w-full lg:flex px-6 sm:px-12">
-        <div className="lg:w-2/3 w-full flex flex-wrap py-16 sm:py-32 gap-6 sm:gap-12">
+        <div className="lg:w-2/3  w-full flex flex-wrap py-16 sm:py-32 gap-6 sm:gap-12">
           <IconCards />
         </div>
         <div className="lg:w-1/3 w-full flex justify-center items-center py-12">
