@@ -1,4 +1,12 @@
 import React from 'react'
+import footer_img_1 from '../assets/footer-img-1.jpg'
+import footer_img_2 from '../assets/footer-img-2.jpg'
+import footer_img_3 from '../assets/footer-img-3.jpg'
+import footer_img_4 from '../assets/footer-img-4.jpg'
+import footer_img_5 from '../assets/footer-img-5.jpg'
+import footer_img_6 from '../assets/footer-img-6.jpg'
+import logo from '../assets/logo.png'
+
 
 const Footer = () => {
   return (
@@ -7,7 +15,7 @@ const Footer = () => {
             <div className="flex flex-wrap py-10">
               {/* Logo and Description */}
               <div className="w-full md:w-1/2 lg:w-1/4 mb-8">
-                <img src="logo.png" alt="Logo" className="mb-4" />
+                <img src={logo} alt="Logo" className="mb-4" />
                 <p className="text-sm w-[80%]">
                   I use Lorem ipsum text all day long and spend hours formatting it, so I set this site up to make my day a little easier.
                 </p>
@@ -49,7 +57,7 @@ const Footer = () => {
               <div className="w-full md:w-1/2 lg:w-1/4 mb-8">
                 <h5 className="text-lg font-bold mb-4">Gallery</h5>
                 <div className="flex flex-wrap gap-2">
-                  {['footer-img-1.jpg', 'footer-img-2.jpg', 'footer-img-3.jpg', 'footer-img-4.jpg', 'footer-img-5.jpg', 'footer-img-6.jpg'].map((img, index) => (
+                  {[footer_img_1,footer_img_2,footer_img_3, footer_img_4, footer_img_5, footer_img_6].map((img, index) => (
                     <img
                       key={index}
                       src={img}

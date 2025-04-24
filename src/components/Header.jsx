@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'; // Updated to 'react-router-dom'
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
         <nav className="flex items-center justify-between px-7 py-4">
           {/* Logo Section */}
           <div className="basis-2/12 flex justify-start">
-            <img src="logo.png" alt="Company Logo" className="h-12" />
+            <img src={logo} alt="Company Logo" className="h-12" />
           </div>
 
           {/* Hamburger Menu (Mobile) */}
