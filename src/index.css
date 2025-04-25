@@ -19,6 +19,7 @@
     background-color: #FFC107;
     left: 0px;
     bottom: 0px;
+    
 }
 
 /* ======================= HERO SECTION END =================== */
@@ -45,15 +46,22 @@
 
 .special {
     position: relative;
-    /* background-image: url(special-bg.png); */
 }
 
 .special::before,.special:after {
     content: "";
-    width: 100%;
-    height: 100px;
-    left: 0px;
     position: absolute;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../src/assets/section-shape.png);
+    background-size: auto 88px;
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: 1;
+    animation: special__slide 80s linear infinite ;
+
 }
 .special::before{
     transform: rotate(180deg);
@@ -64,6 +72,20 @@
 .special:after{
     bottom: -12px;
 
+}
+
+@keyframes special__slide {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -3000px 0;
+    }
+}
+
+.special img {
+    width: 100%;
+    transition: all ease-in-out 0.4s;
 }
 
 /* ================ OUR GALLERY SECTION START ================ */

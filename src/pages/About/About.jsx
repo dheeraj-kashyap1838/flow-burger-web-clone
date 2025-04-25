@@ -1,4 +1,5 @@
 import React from 'react'
+import aboutus_detail from '../../assets/aboutus-detail-img.jpg'
 import PageHead from '../../components/PageHead'
 import About_chek from '../../components/About_chek'
 import About_layer_card from '../../components/About_layer_card'
@@ -7,9 +8,9 @@ const About = () => {
   return (
     <>
       <PageHead page_name='About us' />
-      <section className='w-full py-12 px-4 md:px-12 flex flex-col md:flex-row flex-wrap gap-8 md:gap-0'>
+      <section className='w-full py-12 bg-[#F4F3EF] px-4 md:px-12 flex flex-col md:flex-row flex-wrap gap-8 md:gap-0'>
         <div className='w-full md:w-1/2'>
-          <img src="aboutus-detail-img.jpg" alt="About Us" className='w-full h-auto rounded-lg' />
+          <img src={aboutus_detail} alt="About Us" className='w-full h-auto rounded-lg' />
         </div>
         <div className='w-full md:w-1/2 flex flex-col justify-center'>
           <h2 className='text-3xl md:text-5xl uppercase font-[oswald] md:w-[70%] font-semibold'>

@@ -1,3 +1,4 @@
+// import './index.css';
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer';
@@ -7,6 +8,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contect';
 import Todo from './pages/Todo/Todo';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 
 

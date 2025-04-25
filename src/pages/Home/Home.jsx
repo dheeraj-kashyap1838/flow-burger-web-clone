@@ -24,7 +24,7 @@ const Home = () => {
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
           <h1 className="text-4xl sm:text-6xl lg:text-9xl uppercase font-semibold mb-6">Burger</h1>
-          <p className="text-sm sm:text-lg md:text-xl leading-6 md:leading-8 hidden md:block">
+          <p className="text-sm sm:text-lg md:text-xl md:w-1/2 leading-6 md:leading-8  md:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. It is a long established fact that a reader will be distracted by the layout.
           </p>
         </div>

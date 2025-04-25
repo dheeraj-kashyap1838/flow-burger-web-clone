@@ -14,14 +14,14 @@ const QuteSlider = () => {
 
     const QuteSL_data = [
         {
-            para: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
-            name: "Pratham",
-            desg: "CEO"
-        },
-        {
             para: "Cheese on toast airedale the big cheese. Danish fontina cheesy grin airedale danish fontina taleggio the big cheese macaroni cheesy grin airedale cheese port-salut.",
             name: "Dheeraj Kashyap",
             desg: "Founder"
+        },
+        {
+            para: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+            name: "Pratham",
+            desg: "CEO"
         },
         {
             para: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates deleniti molestias hic a. Deleniti distinctio, possimus ex porro consequatur sapiente!",
@@ -31,7 +31,7 @@ const QuteSlider = () => {
     ];
 
     return (
-        <div className="slider-container">
+        <div className="slider-container text-white">
             <Slider {...settings}>
                 {QuteSL_data.map((elem, idx) => (
                     <div className="px-4 sm:px-8 md:px-16 lg:px-24" key={idx}>
