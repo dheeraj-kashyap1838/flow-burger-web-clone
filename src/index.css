@@ -78,8 +78,11 @@
     0% {
         background-position: 0 0;
     }
-    100% {
+    50% {
         background-position: -3000px 0;
+    }
+    0% {
+        background-position: 0 0;
     }
 }
 
