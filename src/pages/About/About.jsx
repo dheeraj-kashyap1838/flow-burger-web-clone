@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <PageHead page_name='About us' />
-      <section className='w-full py-12 bg-[#F4F3EF] px-4 md:px-12 flex flex-col md:flex-row flex-wrap gap-8 md:gap-0'>
+      <section className='w-full py-24 bg-[#F4F3EF] px-4 md:px-12 flex flex-col md:flex-row flex-wrap gap-8 md:gap-0'>
         <div className='w-full md:w-1/2'>
           <img src={aboutus_detail} alt="About Us" className='w-full h-auto rounded-lg' />
         </div>

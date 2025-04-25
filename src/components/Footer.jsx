@@ -10,13 +10,13 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
-        <footer className="footer__section bg-black text-white">
+        <footer className="footer__section bg-black text-white md:text-left text-center ">
           <div className="container mx-auto max-w-[1440px] px-4">
             <div className="flex flex-wrap py-10">
               {/* Logo and Description */}
               <div className="w-full md:w-1/2 lg:w-1/4 mb-8">
-                <img src={logo} alt="Logo" className="mb-4" />
-                <p className="text-sm w-[80%]">
+                <img src={logo} alt="Logo" className="mb-4 mx-auto md:mx-0" />
+                <p className="text-sm md:w-[80%] w-full">
                   I use Lorem ipsum text all day long and spend hours formatting it, so I set this site up to make my day a little easier.
                 </p>
               </div>
@@ -25,8 +25,7 @@ const Footer = () => {
               <div className="w-full md:w-1/2 lg:w-1/4 mb-8">
                 <h5 className="text-lg font-bold mb-4">Quick Links</h5>
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-center">
-                    <i className="fa-solid fa-house mr-2"></i> Home
+                  <li > Home
                   </li>
                   <li>About Us</li>
                   <li>Services</li>

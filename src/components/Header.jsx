@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto max-w-[1440px]">
         <nav className="flex items-center justify-between px-7 py-4">
           {/* Logo Section */}
-          <div className="basis-2/12 flex justify-start">
+          <div className="md:basis-2/12 flex justify-start">
             <img src={logo} alt="Company Logo" className="h-12" />
           </div>
 

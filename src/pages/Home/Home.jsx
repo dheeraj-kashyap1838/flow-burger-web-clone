@@ -31,7 +31,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="w-full py-12 sm:py-24 px-6 sm:px-12 md:flex items-center flex-wrap">
+      <section className="w-full py-12 sm:py-24 px-6 sm:px-12 flex flex-col-reverse md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
           <FloatBurger burgerlink={tb_about_images} />
         </div>
