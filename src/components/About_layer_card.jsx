@@ -1,14 +1,16 @@
 import React from 'react';
+import aboutus_detail_1 from '../assets/aboutus-detail-icon-01.png'
+import aboutus_detail_2 from '../assets/aboutus-detail-icon-02.png'
 
 const About_layer_card = () => {
     const layer_card = [
         {
-            icon: 'aboutus-detail-icon-01.png',
+            icon: aboutus_detail_1,
             name: 'Best Fast Food',
             txt: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         },
         {
-            icon: 'aboutus-detail-icon-02.png',
+            icon: aboutus_detail_2,
             name: '100% ISO Certification',
             txt: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         }
